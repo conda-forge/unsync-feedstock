@@ -5,9 +5,13 @@ Home: https://github.com/alex-sherman/unsync
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/unsync-feedstock/blob/master/LICENSE.txt)
 
 Summary: Unsynchronize asyncio by using an ambient event loop in a separate thread.
+
+Development: https://github.com/alex-sherman/unsync
+
+Documentation: https://asherman.io/projects/unsync.html
 
 unsync implements a unsync function decorator that will implement
 minimal boilerplate threading, asyncio or multiprocessing depending
