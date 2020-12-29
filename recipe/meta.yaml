@@ -1,5 +1,5 @@
 {% set name = "unsync" %}
-{% set version = "1.2.1" %}
+{% set version = "1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/alex-sherman/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 7a799a21fa7f7564c55e7de781109390e47213e17f676e9b88211cb0f4ceef50
+  sha256: c1c585a7b5e108b89cb40ef2af99fe10ba49011a81985dfea100305c13c5b839
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Unsynchronize asyncio by using an ambient event loop in a separate thread.'
+  summary: Unsynchronize asyncio by using an ambient event loop in a separate thread.
 
   description: |
     unsync implements a unsync function decorator that will implement
