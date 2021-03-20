@@ -1,5 +1,5 @@
 {% set name = "unsync" %}
-{% set version = "1.3" %}
+{% set version = "1.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/alex-sherman/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: c1c585a7b5e108b89cb40ef2af99fe10ba49011a81985dfea100305c13c5b839
+  sha256: 9f25a7e647cf00a0d6e9c77e18c22356e0f805c27cf7509ec9661ef369cc6f87
 
 build:
   noarch: python
