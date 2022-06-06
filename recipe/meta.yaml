@@ -1,13 +1,13 @@
 {% set name = "unsync" %}
-{% set version = "1.3.2" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/alex-sherman/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 511124deb8135718d1b27361ceca1d61a48c224d242fb6a204f082a972d76dba
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/unsync-{{ version }}.tar.gz
+  sha256: a29e0f8952ffb0b3a0453ce436819a5a1ba2febbb5caa707c319f6f98d35f3c5
 
 build:
   noarch: python
@@ -24,6 +24,10 @@ requirements:
 test:
   imports:
     - unsync
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/alex-sherman/unsync
